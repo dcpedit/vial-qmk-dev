@@ -1,6 +1,6 @@
 # Junk files
 *.bak
-*.swp
+*.sw?
 *~
 .DS_Store
 
