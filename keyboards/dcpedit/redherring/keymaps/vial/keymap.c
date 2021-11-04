@@ -37,23 +37,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS,                   KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS,                   KC_TRNS, KC_TRNS, KC_TRNS )
 };
 
-#ifdef ENCODER_ENABLE
-/*
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    switch (index) {
-        case 0:
-            if (clockwise) {
-                tap_code(KC_VOLU);
-            } else {
-                tap_code(KC_VOLD);
-            }
-        break;
-    }
-    return true;
-}
-*/
-#endif
-
 #ifdef OLED_ENABLE
 static void render_name(void) {
     static const char PROGMEM oled_logo[ANIM_SIZE] = {

@@ -227,9 +227,6 @@ bool oled_init(oled_rotation_t rotation) {
 	SH1107_MEMORY_MODE_PAGE,
 #endif
     };
-#if OLED_IC == OLED_IC_SH1107
-print("i am here");
-#endif
     if (I2C_TRANSMIT_P(display_setup1) != I2C_STATUS_SUCCESS) {
         print("oled_init cmd set 1 failed\n");
         return false;
