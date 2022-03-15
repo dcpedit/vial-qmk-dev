@@ -1,12 +1,17 @@
 # Red Herring
+This branch contains OLED drivers for the SH/SSD1107 display from:
+https://github.com/qmk/qmk_firmware/compare/master...sigprof:oled-driver-new-hardware-support-v2 
 
 ## Bootloader:
 https://github.com/coseyfannitutti/discipline/tree/master/doc/bootloader
-Edit Makefile.inc:
-PROGRAMMER = -c avrisp -P /dev/tty.usbmodem123451
+
+Edit Makefile.inc and replace the `/dev/tty.usbmodem123451` with the path QMK Toolbox displays when you plug in your AVR-ISP programmer:
+
+`PROGRAMMER = -c avrisp -P /dev/tty.usbmodem123451`
 
 Build Vial firmware:
-make dcpedit/redherring:vial
+
+`make dcpedit/redherring:vial`
 
 Use Vial software to set keymap and rotary encoder:
 https://get.vial.today/
