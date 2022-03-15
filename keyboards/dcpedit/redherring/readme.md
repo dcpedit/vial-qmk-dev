@@ -1,13 +1,8 @@
-# Red Herring
+# Red Herring Firmware
 This branch contains OLED drivers for the SH/SSD1107 display from:
 https://github.com/qmk/qmk_firmware/compare/master...sigprof:oled-driver-new-hardware-support-v2 
 
-## Bootloader:
-https://github.com/coseyfannitutti/discipline/tree/master/doc/bootloader
-
-Edit Makefile.inc and replace the `/dev/tty.usbmodem123451` with the path QMK Toolbox displays when you plug in your AVR-ISP programmer:
-
-`PROGRAMMER = -c avrisp -P /dev/tty.usbmodem123451`
+## Vial:
 
 Build Vial firmware:
 
@@ -17,6 +12,23 @@ Use Vial software to set keymap and rotary encoder:
 https://get.vial.today/
     
 ## Bootloader
+https://github.com/coseyfannitutti/discipline/tree/master/doc/bootloader
+
+[QMK's ISP Flashing Guide](https://github.com/qmk/qmk_firmware/blob/master/docs/isp_flashing_guide.md)
+
+Edit Makefile.inc and replace the `/dev/tty.usbmodem123451` with the path QMK Toolbox displays when you plug in your AVR-ISP programmer:
+
+`PROGRAMMER = -c avrisp -P /dev/tty.usbmodem123451`
+
+### Commands
+
+`make` (build)
+
+`make flash` (flashes makefile)
+
+`make fuse` (sets fuses for microcontroller)
+
+
 Uses usbasploader, which has been preflashed on the atmega328p before being shipped to you. The usbasploader build available on [hsgw's repository](https://github.com/hsgw/USBaspLoader/tree/plaid) will work if you need to flash a new and unprepared replacement microcontroller. To flash this onto your fresh atmega328p, you will need to use the provided ISP headers and an external ISP programmer.
 
 In order to put the board into bootloader mode you must first hold the boot button (labeled BOOT) and while holding the boot button, press the reset button (labeled RESET) and release it. Wait for another second, then release the boot button as well. The microcontroller will now be in bootloader mode if the bootloader is present and prepared correctly. Continue to flash as you normally would from this point (ie. QMK Toolbox). If you have autoflash enabled on QMK Toolbox, it will do it automatically now. Reset the board once more in order to use the new firmware (you can do this by unplugging and replugging it or by pressing and releasing the reset button.)
