@@ -29,7 +29,7 @@ Edit Makefile.inc and replace the `/dev/tty.usbmodem123451` with the path QMK To
 `make fuse` (sets fuses for microcontroller)
 
 
-Uses usbasploader, which has been preflashed on the atmega328p before being shipped to you. The usbasploader build available on [hsgw's repository](https://github.com/hsgw/USBaspLoader/tree/plaid) will work if you need to flash a new and unprepared replacement microcontroller. To flash this onto your fresh atmega328p, you will need to use the provided ISP headers and an external ISP programmer.
+The usbasploader build available on [hsgw's repository](https://github.com/hsgw/USBaspLoader/tree/plaid) will work if you need to flash a new and unprepared replacement microcontroller. To flash this onto your fresh microcontroller, you will need to use the provided ISP headers and an external ISP programmer.
 
 In order to put the board into bootloader mode you must first hold the boot button (labeled BOOT) and while holding the boot button, press the reset button (labeled RESET) and release it. Wait for another second, then release the boot button as well. The microcontroller will now be in bootloader mode if the bootloader is present and prepared correctly. Continue to flash as you normally would from this point (ie. QMK Toolbox). If you have autoflash enabled on QMK Toolbox, it will do it automatically now. Reset the board once more in order to use the new firmware (you can do this by unplugging and replugging it or by pressing and releasing the reset button.)
 
