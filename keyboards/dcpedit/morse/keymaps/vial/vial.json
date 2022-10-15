@@ -1,0 +1,26 @@
+{
+  "lighting": "none",
+  "matrix": {
+      "rows": 1,
+      "cols": 2 
+  },
+  "layouts": {
+      "labels": [
+        "Single Key"
+      ],
+      "keymap": [
+        [
+          {
+            "w": 2,
+            "h": 2
+          },
+          "0,0",
+          {
+            "w": 2,
+            "h": 2
+          },
+          "0,1\n\n\n0,0"
+        ]
+      ]
+  }
+}

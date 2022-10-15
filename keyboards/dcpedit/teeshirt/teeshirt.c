@@ -14,7 +14,5 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
  */
 
-#pragma once
 
-/* Define custom font */
-#define OLED_FONT_H "keyboards/mechwild/mercutio/lib/mercutiofont.c"
+#include "teeshirt.h"
