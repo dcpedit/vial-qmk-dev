@@ -38,8 +38,6 @@
 #define ENCODERS_PAD_A { B2 }
 #define ENCODERS_PAD_B { B6 }
 
-#define OLED_FONT_H "lib/teeshirtfont.c"
-
 /* encoder resolution */
 #define ENCODER_RESOLUTION 4
 #define TAP_CODE_DELAY 10
