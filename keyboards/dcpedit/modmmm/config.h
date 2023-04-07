@@ -41,7 +41,6 @@
 #define ENCODERS_PAD_B { A13, A14, A14 }
 
 /* Buzzer */
-/*
 #define AUDIO_PIN A8
 #define AUDIO_PWM_PAL_MODE 1
 #define AUDIO_PWM_DRIVER PWMD1
@@ -50,12 +49,9 @@
 #define AUDIO_CLICKY
 #define AUDIO_CLICKY_FREQ_RANDOMNESS 1.5f
 #define STARTUP_SONG SONG(STARTUP_SOUND)
-*/
 
 /* Solenoid */
-/*
 #define SOLENOID_PIN A10
-*/
 
 /* encoder resolution */
 #define ENCODER_RESOLUTION 4
@@ -72,3 +68,7 @@
 
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
+
+#define LED_NUM_LOCK_PIN A1
+#define LED_CAPS_LOCK_PIN B12
+#define LED_SCROLL_LOCK_PIN A0

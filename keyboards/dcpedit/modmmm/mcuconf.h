@@ -24,13 +24,9 @@
 #define STM32_PWM_USE_TIM5 TRUE
 
 /* TIM1 PWM used for audio driver */
-/*
 #undef STM32_PWM_USE_TIM1
 #define STM32_PWM_USE_TIM1 TRUE
-*/
 
 /* TIM5 GPT used for audio driver */
-/*
 #undef STM32_GPT_USE_TIM4
 #define STM32_GPT_USE_TIM4 TRUE
-*/

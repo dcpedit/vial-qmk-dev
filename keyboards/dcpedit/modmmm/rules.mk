@@ -1,5 +1,6 @@
 # MCU name
 MCU = STM32F411
+BOARD = BLACKPILL_STM32_F411
 
 # Bootloader selection
 BOOTLOADER = stm32-dfu
@@ -17,9 +18,9 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 # Do not enable SLEEP_LED_ENABLE. it uses the same timer as BACKLIGHT_ENABLE
 SLEEP_LED_ENABLE = no       # Breathing sleep LED during USB suspend
-AUDIO_ENABLE = no          # Audio output
-# AUDIO_DRIVER = pwm_hardware
+AUDIO_ENABLE = yes          # Audio output
+AUDIO_DRIVER = pwm_hardware
 ENCODER_ENABLE = yes
 OLED_ENABLE = no
-#HAPTIC_ENABLE = yes
-#HAPTIC_DRIVER += SOLENOID
+HAPTIC_ENABLE = yes
+HAPTIC_DRIVER += SOLENOID
