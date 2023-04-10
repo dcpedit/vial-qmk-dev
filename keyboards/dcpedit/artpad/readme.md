@@ -1,1 +1,3 @@
-# Dissatisfaction 30 Macro Pad
+# ArtPad
+
+https://github.com/dcpedit/artpad
